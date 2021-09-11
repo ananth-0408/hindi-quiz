@@ -20,6 +20,8 @@ let questions = [
   "देश का पहला राज्य जिसने हिंदी को आधिकारिक भाषा के रूप में स्वीकार किया? (The first state in the country to accept Hindi as an official language?)",
   "हिन्दी में वेब एड्रेस बनाने की सुविधा कब शुरू हुई? (When is the web page facility being started in Hindi?)",
   "भारत का शेक्सपीयर किसे कहा जाता है? (Who is known as India’s Shakespeare?)",
+  "हिन्दी साहित्य की प्रथम कहानी? (Which is the first story of Hindi literature?)",
+  "हिन्दी की प्रथम पत्रिका? (Which is the first Hindi magazine?)",
   "Your Score",
 ];
 
@@ -76,6 +78,18 @@ let options = [
     "कालिदास (Kalidas)",
     "मीराबाई (Meerabai)",
   ],
+  [
+    "गोदन (Godan)",
+    "जनता (Janatha)",
+    "इन्दुमती (Indumathi)",
+    "भारतमाथा (Bharathmaatha)",
+  ],
+  [
+    "चंपक (Champak)",
+    "चंदामामा (Chandamaama)",
+    "संवाद कौमुदी (samvaad komudi)",
+    "गृहशोभा (Grihshobha)",
+  ]
   ["anser", "only", "one", "more"],
 ];
 let i = 0;
