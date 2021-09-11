@@ -268,7 +268,7 @@ quizStart.onclick = () => {
           wrong2.pointerEvents = "initial";
           correct.pointerEvents = "initial";
           console.log(i);
-          if (i === 10) {
+          if (i === 12) {
             instructionsBody.style.animation =
               "instructionsBodyDisappear .5s forwards";
             console.log("hello i is 8");
