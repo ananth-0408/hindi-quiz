@@ -57,7 +57,7 @@ body {
   background: white;
   z-index: 9;
   width: 600px;
-  min-height: 370px;
+  min-height: 390px;
   padding: 10px;
   opacity: 0;
   height: 0;
@@ -65,7 +65,7 @@ body {
 }
 
 .instructions-header {
-  height: 80px;
+  height: 100px;
   font-weight: 400;
   font-size: 24px;
   border-bottom: 0.5px solid gray;
