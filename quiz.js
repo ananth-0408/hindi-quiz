@@ -89,7 +89,7 @@ let options = [
     "चंदामामा (Chandamaama)",
     "संवाद कौमुदी (samvaad komudi)",
     "गृहशोभा (Grihshobha)",
-  ]
+  ],
   ["anser", "only", "one", "more"],
 ];
 let i = 0;
