@@ -1,6 +1,6 @@
-let instructionsForm = `<input class="nameUser" style="background: white; cursor: text; margin: 35px 0px;">
-                       <input class="score" readonly>
-                       <button class="">`;
+let instructionsForm = `<input class="nameUser" placeholder="Your Name" style="background: white; cursor: text; margin: 35px 0px;">
+                       <input class="score" readonly value="${score}">
+                       <button class="submitForm">Submit!</button>`;
 
 
 
@@ -335,6 +335,7 @@ quizStart.onclick = () => {
                 document.querySelector('.submitScore').style.animation = 'wannaSubmit .5s forwards';
                 let submitScore = document.getElementsByClassName('linkSub')[0];
                 submitScore.onclick = () => {
+                  submitScore.style.display = 'none';
                   instructions.style.animation = 'instructionsBodyDisappear .5s forwards';
                   btnStartQuiz.style.display = 'none';
                   setTimeout(() => {instructions.innerHTML = '';instructions.style.animation = 'instructionsBodyAppear .5s forwards'; instructions.classList.add('formInstructions'); 
