@@ -1,4 +1,4 @@
-let intructionsForm = `<input class="nameUser">
+let intsructionsForm = `<input class="nameUser">
                        <input class="score" readonly>
                        <button class="">`;
 
