@@ -1,4 +1,4 @@
-let instructionsForm = `<div class="instructions-header">
+let instructionsForm = `<div class="instructions-header" style="opacity: 1;">
                           <p> Submit Score </p>
                        </div>
                        <input class="nameUser" placeholder="Your Name" style="background: white; cursor: text; margin: 35px 0px;">
