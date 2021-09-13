@@ -397,3 +397,15 @@ input:focus {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+
+.submitForm {
+  --borderAndText: #23fc6c;
+  --color: white;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nextQue:hover {
+  --color: #23fc6c;
+  color: white;
+}
