@@ -379,6 +379,6 @@ input:focus {
   position: absolute;
   top: 50px;
   left: 50%;
-  transfrom: translateX(-50%);
+  transform: translateX(-50%);
 }
 
