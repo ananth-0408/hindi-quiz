@@ -369,3 +369,16 @@ input:focus {
   box-shadow: 0px 0px 5px darkblue;
 }
 
+.submitScore {
+  min-height: 40px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4287f5;
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transfrom: translateX(-50%);
+}
+
