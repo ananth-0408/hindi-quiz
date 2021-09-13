@@ -1,7 +1,6 @@
-let intructionsForm = '<input class="nameUser">
+let intructionsForm = `<input class="nameUser">
                        <input class="score" readonly>
-                       <button class="">
-';
+                       <button class="">`;
 
 
 
