@@ -382,3 +382,12 @@ input:focus {
   transform: translateX(-50%);
 }
 
+.linkSub {
+  cursor: pointer;
+  color: #24a0ed;
+  transition: .2s ease-in-out;
+}
+
+.linkSub:hover {
+  text-decoration: underline; 
+}
