@@ -1,4 +1,4 @@
-let instructionsForm = `<input class="nameUser" style="background: white; cursor: text;">
+let instructionsForm = `<input class="nameUser" style="background: white; cursor: text; margin: 35px 0px;">
                        <input class="score" readonly>
                        <button class="">`;
 
