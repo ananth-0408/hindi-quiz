@@ -1,5 +1,5 @@
 let instructionsForm = `<input class="nameUser" placeholder="Your Name" style="background: white; cursor: text; margin: 35px 0px;">
-                       <input class="score" readonly value="${score}">
+                       <input class="score" readonly>
                        <button class="submitForm">Submit!</button>`;
 
 
