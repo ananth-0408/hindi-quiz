@@ -384,7 +384,7 @@ input:focus {
 
 .linkSub {
   cursor: pointer;
-  color: rgba(36, 160, 237, 0.4);
+  text-shadow: 0px 0px 5px #24a0ed;
   transition: .2s ease-in-out;
 }
 
