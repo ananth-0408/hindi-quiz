@@ -336,7 +336,8 @@ quizStart.onclick = () => {
                 let submitScore = document.getElementsByClassName('linkSub')[0];
                 submitScore.onclick = () => {
                   instructions.style.animation = 'instructionsBodyDisappear .5s forwards';
-                  setTimeout(() => {instructions.innerHTML = '';instructions.style.animation = 'instructionsBodyAppear .5s forwards'; 
+                  btnStartQuiz.style.display = 'none';
+                  setTimeout(() => {instructions.innerHTML = '';instructions.style.animation = 'instructionsBodyAppear .5s forwards'; instructions.classList.add('formInstructions'); 
                     setTimeout(() => {
                       instructions.innerHTML = instructionsForm;
                     }, 500);  
