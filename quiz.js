@@ -323,6 +323,10 @@ quizStart.onclick = () => {
                 instructionsBody.style.animation =
                   "instructionsBodyAppear .5s forwards";
               }, 510);
+              setTimeout(() => {
+                document.querySelector('.submitScore').style.display = "block";
+                document.querySelector('.submitScore').style.animation = 'wannaSubmit .5s forwards';
+              }, 1000);  
               document.querySelector(".btn-reload").onclick = () => {
                 location.reload();
               };
