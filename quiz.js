@@ -304,7 +304,7 @@ quizStart.onclick = () => {
                 "instructionsBodyDisappear .5 forwards";
               let scoreDiv = document.createElement("div");
               scoreDiv.classList.add("scoreDiv");
-              scoreDiv.innerHTML = `<p class="heading"> Your Score </p> <p class="scoreNum">${score}/12</p> <br><p class="msg" style="color: ${color};"> ${message}</p> <br> <br> <button class="btn btn-reload">Redo Quiz</button>`;
+              scoreDiv.innerHTML = `<p class="heading"> Your Score </p> <p class="scoreNum">${score}/12</p> <br><p class="msg" style="color: ${color};"> ${message}</p> <br> <br> <button class="btn btn-reload">Redo Quiz</button><br> <span> Github: https://github.com/ananth-0408`;
               // console.log(document.querySelectorAll(".btn"));
               // if (
               //   document
