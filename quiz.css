@@ -408,7 +408,7 @@ input:focus {
   transform: translateX(-50%);
 }
 
-.nextQue:hover {
+.submitForm:hover {
   --color: #23fc6c;
   color: white;
 }
