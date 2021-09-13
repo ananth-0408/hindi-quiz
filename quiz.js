@@ -1,4 +1,7 @@
-let instructionsForm = `<input class="nameUser" placeholder="Your Name" style="background: white; cursor: text; margin: 35px 0px;">
+let instructionsForm = `<div class="instructions-header">
+                          <p> Submit Score </p>
+                       </div>
+                       <input class="nameUser" placeholder="Your Name" style="background: white; cursor: text; margin: 35px 0px;">
                        <input class="score" readonly>
                        <button class="submitForm btn">Submit!</button>`;
 
