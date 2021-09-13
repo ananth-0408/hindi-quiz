@@ -409,3 +409,17 @@ input:focus {
   --color: #23fc6c;
   color: white;
 }
+
+.formInstructions {
+  --bgClr: #1822a3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 5px var(--bgClr);
+  background: white;
+  z-index: 9;
+  min-width: 600px;
+  min-height: 390px;
+  padding: 10px;
+}
