@@ -403,6 +403,9 @@ input:focus {
   --color: white;
   transition: all 0.3s ease;
   position: relative;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nextQue:hover {
