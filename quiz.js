@@ -1,3 +1,11 @@
+let intructionsForm = '<input class="nameUser">
+                       <input class="score" readonly>
+                       <button class="">
+';
+
+
+
+
 let btnStartQuiz = document.getElementsByClassName("btn-startQuiz")[0];
 let instructions = document.getElementsByClassName("instructions")[0];
 let instructionsBody = document.getElementsByClassName("instructions-body")[0];
@@ -326,7 +334,16 @@ quizStart.onclick = () => {
               setTimeout(() => {
                 document.querySelector('.submitScore').style.display = "block";
                 document.querySelector('.submitScore').style.animation = 'wannaSubmit .5s forwards';
-              }, 1000);  
+                let submitScore = document.getElementsByClassName('linkSub')[0];
+                submitScore.onclick = () => {
+                  instructions.style.animation = 'instructionsBodyDisappear .5s forwards';
+                  setTimeout(() => {instructions.innerHTML = '';instructions.style.animaton = 'instructionsBodyAppear .5s forwards'; 
+                    setTimeout(() => {
+                      instructions.innerHTML = instructionsForm;
+                    }, 500);  
+                  }, 500);
+                }  
+              }, 3000);  
               document.querySelector(".btn-reload").onclick = () => {
                 location.reload();
               };
