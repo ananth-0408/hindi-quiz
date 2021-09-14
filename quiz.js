@@ -361,6 +361,8 @@ const handleSubmit = (event) => {
   }).then(() => navigate("/thank-you/")).catch(error => alert(error))
 }
 
+                  document.getElementsByClassName('nameUser')[0].focus();
+
                   setTimeout(() => {instructions.innerHTML = '';instructions.style.animation = 'instructionsBodyAppear .5s forwards'; instructions.classList.add('formInstructions'); 
                     setTimeout(() => {
                       instructions.innerHTML = instructionsForm;
