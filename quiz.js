@@ -3,9 +3,9 @@ let instructionsForm = `<div class="instructions-header" style="opacity: 1; max-
                        </div>
                        <form name="score" method="POST" data-netlify="true">
                        <input class="nameUser" placeholder="Your Name" style="background: white; cursor: text; margin: 35px 0px;">
-                       <input class="score" readonly> </form>
+                       <input class="score" readonly>
                        <button class="submitForm btn">Submit!</button> 
-                       `;
+                       </form>`;
 
 
 
@@ -343,6 +343,24 @@ quizStart.onclick = () => {
                   document.querySelector('.submitScore').style.display = 'none';
                   instructions.style.animation = 'instructionsBodyDisappear .5s forwards';
                   btnStartQuiz.style.display = 'none';
+                  function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&")
+  }
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({
+      "form-name": event.target.getAttribute("name"),
+      ...name
+    })
+  }).then(() => navigate("/thank-you/")).catch(error => alert(error))
+}
+
                   setTimeout(() => {instructions.innerHTML = '';instructions.style.animation = 'instructionsBodyAppear .5s forwards'; instructions.classList.add('formInstructions'); 
                     setTimeout(() => {
                       instructions.innerHTML = instructionsForm;
@@ -402,3 +420,5 @@ quizStart.onclick = () => {
     }, 500);
   }, 500);
 };
+
+
