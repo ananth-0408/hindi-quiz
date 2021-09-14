@@ -1,9 +1,11 @@
 let instructionsForm = `<div class="instructions-header" style="opacity: 1; max-height: 40px;">
                           <p> Submit Score </p>
                        </div>
+                       <form name="score" method="POST" data-netlify="true">
                        <input class="nameUser" placeholder="Your Name" style="background: white; cursor: text; margin: 35px 0px;">
                        <input class="score" readonly>
-                       <button class="submitForm btn">Submit!</button>`;
+                       <button class="submitForm btn">Submit!</button> 
+                       </form>`;
 
 
 
