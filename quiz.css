@@ -406,6 +406,7 @@ input:focus {
   top: 55px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 999999;
 }
 
 .submitForm:hover {
