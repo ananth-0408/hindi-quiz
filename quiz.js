@@ -343,7 +343,14 @@ quizStart.onclick = () => {
                   document.querySelector('.submitScore').style.display = 'none';
                   instructions.style.animation = 'instructionsBodyDisappear .5s forwards';
                   btnStartQuiz.style.display = 'none';
-                  function encode(data) {
+                
+
+
+                  setTimeout(() => {instructions.innerHTML = '';instructions.style.animation = 'instructionsBodyAppear .5s forwards'; instructions.classList.add('formInstructions'); 
+                    setTimeout(() => {
+                      instructions.innerHTML = instructionsForm;
+                  document.getElementsByClassName('nameUser')[0].focus();
+                        function encode(data) {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&")
@@ -360,12 +367,6 @@ const handleSubmit = (event) => {
     })
   }).then(() => navigate("/thank-you/")).catch(error => alert(error))
 }
-
-
-                  setTimeout(() => {instructions.innerHTML = '';instructions.style.animation = 'instructionsBodyAppear .5s forwards'; instructions.classList.add('formInstructions'); 
-                    setTimeout(() => {
-                      instructions.innerHTML = instructionsForm;
-                  document.getElementsByClassName('nameUser')[0].focus();
                       
                     }, 500);  
                   }, 500);
